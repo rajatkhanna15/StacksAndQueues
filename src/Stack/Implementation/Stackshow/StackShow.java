@@ -37,6 +37,14 @@ public class StackShow {
         intArray[++top] = value;                   //increment top ,insert the value.
     }
 
+    /**
+     * pop() method to return the element at topmost index and delete it from the array.
+     * @return element at top.
+     */
+    public int pop()
+    {
+        return intArray[top --];                         // access item, decrement top
+    }
 
 
 }
