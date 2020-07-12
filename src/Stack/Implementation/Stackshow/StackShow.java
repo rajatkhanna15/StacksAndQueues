@@ -71,5 +71,14 @@ public class StackShow {
         return top == nElems-1;
     }
 
+    /**
+     * display() elements to display the elements.
+     */
+    public void display()
+    {
+        for (int i = 0; i < nElems; i++) {
+            System.out.print(intArray[i] + " ");
+        }
+    }
 
 }
