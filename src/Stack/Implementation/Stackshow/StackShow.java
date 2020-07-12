@@ -12,17 +12,22 @@ public class StackShow {
      * instance variables.
      * intArray[] to store the data items.
      * nElems to store the number of data items.
+     * top to store the index of topmost element.
      */
     private int[] intArray;
-    private int nElems;
+    private int nElems, top = -1;
 
     /**
-     * Parametrised constructor to declare the array with size as max and initialise nElems to 0.
+     * Parametrised constructor to declare the array with size as max and initialise nElems to 0 and top to -1.
      * @param max the max
      */
     public StackShow(int max)
     {
         intArray = new int[max];
         nElems = 0;
+        top = -1;
     }
+
+
+
 }
