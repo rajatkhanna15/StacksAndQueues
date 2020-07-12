@@ -63,6 +63,13 @@ public class StackShow {
         return top == -1 ;
     }
 
+    /**
+     * isFull() method to check whether the stack is full or not.
+     */
+    public boolean isFull()
+    {
+        return top == nElems-1;
+    }
 
 
 }
