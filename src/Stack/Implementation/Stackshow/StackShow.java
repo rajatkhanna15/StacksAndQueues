@@ -28,6 +28,14 @@ public class StackShow {
         top = -1;
     }
 
+    /**
+     * push() method to push the value in the array at top.
+     * @param value the value to be pushed.
+     */
+    public void push(int value)
+    {
+        intArray[++top] = value;                   //increment top ,insert the value.
+    }
 
 
 }
