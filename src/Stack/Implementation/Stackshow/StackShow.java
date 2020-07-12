@@ -46,6 +46,14 @@ public class StackShow {
         return intArray[top --];                         // access item, decrement top
     }
 
+    /**
+     * peek() method to return the element at topmost index,without removing it.
+     * @return element at top.
+     */
+    public int peek()
+    {
+        return intArray[top];                             //access item only.
+    }
 
 
 }
