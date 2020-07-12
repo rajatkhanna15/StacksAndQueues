@@ -16,4 +16,13 @@ public class StackShow {
     private int[] intArray;
     private int nElems;
 
+    /**
+     * Parametrised constructor to declare the array with size as max and initialise nElems to 0.
+     * @param max the max
+     */
+    public StackShow(int max)
+    {
+        intArray = new int[max];
+        nElems = 0;
+    }
 }
