@@ -55,6 +55,13 @@ public class StackShow {
         return intArray[top];                             //access item only.
     }
 
+    /**
+     * isEmptu() method to check whether the stack is empty or not.
+     */
+    public boolean isEmpty()
+    {
+        return top == -1 ;
+    }
 
 
 }
