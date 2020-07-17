@@ -20,4 +20,16 @@ public class QueueArray {
     private int rear;
     private int nElems;
 
+    /**
+     * parametrised constructor to initialise the values and declare the array.
+     * @param max the max
+     */
+    QueueArray(int max)
+    {
+        maxSize = max;
+        intArray = new int[maxSize];
+        front = 0;
+        rear = -1;
+        nElems = 0;
+    }
 }
