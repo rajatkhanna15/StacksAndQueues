@@ -1,4 +1,4 @@
-package Queue.Implementation.SimpleQueue.QueueArray;
+package Queue.Implementation.CircularQueue.QueueArray;
 
 /**
  * QueueArray class for the implementation of various methods of Queue.
@@ -33,4 +33,15 @@ public class QueueArray {
         nElems = 0;
     }
 
+    /**
+     * insert() method to insert the values in the queue.
+     * @param value the value
+     */
+    public void insert(int value)
+    {
+        if(rear == maxSize - 1)                              //wraparound
+            rear = -1;
+        intArray[++rear] = value;
+        nElems ++;
+    }
 }
