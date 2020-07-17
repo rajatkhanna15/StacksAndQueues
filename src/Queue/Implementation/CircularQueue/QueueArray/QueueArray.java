@@ -24,7 +24,7 @@ public class QueueArray {
      * parametrised constructor to initialise the values and declare the array.
      * @param max the max
      */
-    QueueArray(int max)
+    public QueueArray(int max)
     {
         maxSize = max;
         intArray = new int[maxSize];
