@@ -74,6 +74,13 @@ public class QueueArray {
         return nElems == 0;
     }
 
+    /**
+     * isFull() method to return true is the queue is full, otherwise false.
+     */
+    public boolean isFull()
+    {
+        return nElems == maxSize;
+    }
 
 
 }
