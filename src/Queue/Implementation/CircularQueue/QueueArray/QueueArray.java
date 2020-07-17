@@ -66,5 +66,13 @@ public class QueueArray {
         return intArray[front];
     }
 
+    /**
+     * isEmpty() method to check whether the queue is empty or not.
+     */
+    public boolean isEmpty()
+    {
+        return nElems == 0;
+    }
+
 
 }
