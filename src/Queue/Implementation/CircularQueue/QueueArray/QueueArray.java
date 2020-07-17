@@ -4,7 +4,7 @@ package Queue.Implementation.CircularQueue.QueueArray;
  * QueueArray class for the implementation of various methods of Queue.
  * The three basic methods are : 1. insert() method to insert an element from the rear of the queue.
  *                               2. remove() method to delete an element from the front of the queue.
- *                               3. peek() method to return the element at front of the queue.
+ *                               3. peekFront() method to return the element at front of the queue.
  */
 public class QueueArray {
     /**
@@ -55,6 +55,15 @@ public class QueueArray {
             front = 0;
         nElems --;
         return temp;
+    }
+
+    /**
+     * peekFront() method to return the element at front index of the queue.
+     * @return element at front.
+     */
+    public int peekFront()
+    {
+        return intArray[front];
     }
 
 }
