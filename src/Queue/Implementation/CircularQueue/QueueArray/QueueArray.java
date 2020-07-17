@@ -34,7 +34,7 @@ public class QueueArray {
     }
 
     /**
-     * insert() method to insert the values in the queue.
+     * insert() method to insert the values from rear in the queue.
      * @param value the value
      */
     public void insert(int value)
@@ -45,4 +45,15 @@ public class QueueArray {
         nElems ++;
     }
 
+    /**
+     * remove() method to remove the values from the front of the queue.
+     */
+    public int remove()
+    {
+        int temp = intArray[front ++];                   //get value and increment the front.
+        if(front == maxSize)                              //wraparound
+            front = 0;
+        nElems --;
+        return temp;
+    }
 }
